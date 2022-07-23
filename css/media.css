@@ -1,0 +1,23 @@
+@media only screen and (max-width: 767px) {
+    .header-text {
+        transform: translate(-50%, -68%);
+    }
+    #services .row > div:nth-child(1){
+        order: 1;
+    }
+    #services .row > div:nth-child(2){
+        order: 2;
+    }
+    #services .row > div:nth-child(3){
+        order: 4;
+    }
+    #services .row > div:nth-child(4){
+        order: 3;
+    }
+    #services .row > div:nth-child(5){
+        order: 5;
+    }
+    #services .row > div:nth-child(6){
+        order: 6;
+    }
+}

@@ -1,5 +1,86 @@
+body {
+    /* font-size: 18px; */
+    font-family: 'Barlow', serif;
+    overflow-x: hidden;
+}
+:root {
+    --second-color: #8d8b8b;
+}
+/* header */
 header {
     background-image: url('../img/image-header.jpg');
     background-size: cover;
+    background-position: center;
     height: 100vh;
 }
+header li a:hover {
+        transition: all 1s ease;
+        opacity: .6;
+}
+.header-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -45%);
+}
+/* services */
+#services .row > div{
+    height: 532px;
+}
+#services .row > div:nth-child(5), #services .row > div:nth-child(6) {
+    background-size: cover;
+    background-position: center;
+}
+#services .row > div:nth-child(5){
+    background-image: url('../img/image-graphic-design.jpg');
+    color: #5c9186;
+}
+#services .row > div:nth-child(6){
+    background-image: url('../img/image-photography.jpg');
+    color: #4a9ac1;
+}
+#services .yellow-line::before, #services .pink-line::before {
+    content: '';
+    height: 9px;
+    width: 100px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 6px;
+    bottom: 2px;
+    left: -2px;
+}
+#services .yellow-line::before {
+    background-color: #fcd402;
+}
+#services .pink-line::before {
+    background-color: #ff745e;
+}
+/* testimonials */
+#testimonials img {
+    border-radius: 50%;
+    width: 87px;
+}
+/* footer */
+footer {
+    background-color: #90d4c5;
+}
+footer h3, footer a {
+    color: #2e7567;
+}
+footer a:hover {
+    transition: all 1s ease;
+    color: #fff;
+}
+/* common property */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fraunces', serif;
+}
+#testimonials h4, header h1 {
+    letter-spacing: 5px;
+}
+
+/* start my frame work */
+.second-color {
+    color: var(--second-color);
+}
+/* end my frame work */
