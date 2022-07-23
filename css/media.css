@@ -1,4 +1,8 @@
 @media only screen and (max-width: 767px) {
+    .navbar {
+        background-color: #3dbeff;
+        z-index: 5;
+    }
     .header-text {
         transform: translate(-50%, -68%);
     }
